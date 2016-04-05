@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XGq-RA-Sxg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--VisionSlideViewControllerDemo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeD-I0-lIc">
+                                <rect key="frame" x="229" y="282" width="143" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show Controller"/>
+                                <connections>
+                                    <action selector="showController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUN-av-XcV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐在UINavigationController下使用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1i-zv-dcX">
+                                <rect key="frame" x="200" y="332" width="201" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.98732787370681763" green="0.29875051975250244" blue="0.0071055064909160137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I recommend to use with UINavigationController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D84-iB-3q6">
+                                <rect key="frame" x="160" y="355" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Vkf-Ee-XBT"/>
+                                    <constraint firstAttribute="height" constant="21" id="dHZ-BJ-cWL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.98732787370681763" green="0.29875051975250244" blue="0.0071055064909160137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t1i-zv-dcX" firstAttribute="bottom" secondItem="JeD-I0-lIc" secondAttribute="bottom" constant="29" id="Cuz-9a-clv"/>
+                            <constraint firstItem="D84-iB-3q6" firstAttribute="top" secondItem="t1i-zv-dcX" secondAttribute="bottom" constant="8" id="PiS-hy-X7J"/>
+                            <constraint firstItem="JeD-I0-lIc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aRc-Am-7Vt"/>
+                            <constraint firstItem="t1i-zv-dcX" firstAttribute="centerX" secondItem="JeD-I0-lIc" secondAttribute="centerX" id="gG6-op-NGH"/>
+                            <constraint firstItem="JeD-I0-lIc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ifU-BI-I7z"/>
+                            <constraint firstItem="D84-iB-3q6" firstAttribute="centerX" secondItem="t1i-zv-dcX" secondAttribute="centerX" id="qKg-PP-EDR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VisionSlideViewControllerDemo" id="G90-wr-TkB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aEh-y1-9AD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XGq-RA-Sxg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="13H-mX-nLq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cct-U5-Lp1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH5-SK-CGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="429"/>
+        </scene>
+    </scenes>
+</document>
