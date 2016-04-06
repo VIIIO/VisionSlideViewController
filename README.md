@@ -4,7 +4,7 @@ VisionSlideViewController
 * 可直接通過导航栏进行分页切换的布局容器，不限制分页数量。本Controller为基类，实际项目中需要继承使用(subClass)。
 
 ### Screenshots
-None.
+![image](http://blog.viiio.com/wp-content/uploads/2016/04/visioncontrol_05.gif)
 
 ### Contents
 ## Installation 安装
